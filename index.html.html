@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<style>
+    .list-item{
+        color: red;
+    }
+</style>
+<body>
+
+    <h1>About Me</h1>
+
+    <ul>
+        <li class="list-item">Nickname: <span id="nickname"></span>
+        <li class="list-item">Favorites: <span id="favorites"></span>
+        <li class="list-item">Hometown: <span id="hometown"></span>
+        </ul>
+    
+</body>
+<script>
+    var body = document.body;
+
+    body.style.fontFamily = "Arial sans-serif";
+
+    document.getElementById('nickname').innerHTML = "Jay";
+    document.getElementById('favorites').innerHTML = "Kris";
+    document.getElementById('hometown').innerHTML = "Phoenix";
+
+    document.getElementById('nickname').className = "list-item";
+    document.getElementById('favorites').className = "list-item";
+    document.getElementById('hometown').className = "list-item";
+
+
+    var IMG = document.createElement('img');
+    body.appendChild(IMG)
+    IMG.src = './IMG_9821.jpg';
+    IMG.style.width = "200px";
+    IMG.style.height = "400px";
+
+
+</script>
+</html>
